@@ -39,23 +39,28 @@ int op, op1;
  if(op==1){
 printf("Em Calsius:");
 scanf("%f",&tc);
+
 tf=Celsius_Fahrenheit(tc);
 
+printf("Temperatura em fahrenheit é : %.2f\n",tf);
 }else if(op==2){
    printf("Em Fahrenheit:");
     scanf("%f",&tf);
     
-    
     tc= Fahrenheit_Celsius(tf);
+    printf("Temperatura em Celsius é : %.2f\n",tc);
+
+    
+    
 }else if (op==3){
-   printf("Em kelvin:");
-scanf("%f",&tk);
+   printf("Em Celsius:");
+scanf("%f",&tc);
+
 tk= Celsius_Kelvin(tc);
- 
+ printf("Temperatura em Kelvin é : %.2f\n",tk);
 }
-printf("Temperatura em Celsius é : %.2f\n",tc);
-printf("Temperatura em fahrenheit é : %.2f\n",tf);
-printf("Temperatura em Kelvin é : %.2f\n",tk);
+
+
  
 
 return 0;
